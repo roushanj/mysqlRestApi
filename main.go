@@ -25,7 +25,7 @@ func main() {
 	// NOTE: See we’re using = to assign the global var
 	// instead of := which would assign it only in this function
 	//db, err = gorm.Open(“sqlite3”, “./gorm.db”)
-	db, _ = gorm.Open("mysql", "root:75hz4815@@tcp(127.0.0.1:3306)/crudApi?charset=utf8&parseTime=True&loc=Local")
+	db, _ = gorm.Open("mysql", "user:password@tcp(127.0.0.1:3306)/db?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		fmt.Println(err)
 	}
